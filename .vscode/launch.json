@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "開発環境 (dev)",
+      "type": "dart",
+      "request": "launch",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define=FLAVOR=dev"
+      ]
+    },
+    {
+      "name": "stg環境 (stg)",
+      "type": "dart",
+      "request": "launch",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define=FLAVOR=stg"
+      ]
+    },
+    {
+      "name": "本番環境 (prod)",
+      "type": "dart", 
+      "request": "launch",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define=FLAVOR=prod"
+      ]
+    },
+    {
+      "name": "本番リリース",
+      "type": "dart",
+      "request": "launch", 
+      "flutterMode": "release",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define=FLAVOR=prod"
+      ]
+    }
+  ]
+}
